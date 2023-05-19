@@ -1,24 +1,28 @@
 import java.util.Scanner;
 
-class Programa {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    boolean erroTentativas = false;
-    Pessoa pessoa = new Pessoa();
-    Mensagem mensagem = new Mensagem();
-    Validacao validacao = new Validacao();
+public class Programa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    System.out.println("\tRelatório Auxiliar de Controle de Infecções");
+        System.out.println("\tRelatório Auxiliar de Controle de Infecções");
 
-    pessoa.coletaNome(sc);
-    pessoa.coletaIdade(sc);
+        Pessoa pessoa = coletarDadosPessoa(scanner);
 
-    erroTentativas = mensagem.realizaPerguntaVacinaEmDia(pesssoa);
+        boolean erroTentativas = Mensagem.realizaPerguntaVacinaEmDia(pessoa);
 
-    validacao.validacaoDasProximasPerguntas(pessoas);
+        Validacao.validarProximasPerguntas(pessoa);
 
-    validacao.calcularValidacaoFinal(erroTentativass);
+        Validacao.calcularValidacaoFinal(erroTentativas);
 
-    // scanner.close();
-  }
+        scanner.close();
+    }
+
+    private static Pessoa coletarDadosPessoa(Scanner scanner) {
+        Pessoa pessoa = new Pessoa();
+
+        pessoa.coletaNome(scanner);
+        pessoa.coletaIdade(scanner);
+
+        return pessoa;
+    }
 }
