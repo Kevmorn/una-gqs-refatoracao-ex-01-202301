@@ -98,3 +98,5 @@ Você deverá criar um ***"Fork"*** deste repositório, e após isso, versionar 
 Utilize o conceito de Git Semântico para versioná-lo.<br>
 Você deverá enviar o link (url) do seu repositório na atividade da lista proposta em aula.<br>
 Bons estudos!
+
+eu com auxilio do stackoverflow modifiquei o que eu acho que sabia dentro dos codigos pessoa (comentarios) Mensagem mudei alguns atributos e sentido de algumas atribuiçoes , dentro de pessoa foi mudado alguns atributos para 1 classe só para poupar o objeto tudo foi feito com meu conhecimento(é bem pouco sobre a linguagem em geral e com auxilio de sites como stack overflow e IA Assistence)
